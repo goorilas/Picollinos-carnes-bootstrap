@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picollinos-Carnes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4">
+        <div class="container-fluid">
+            <h1 class="navbar-brand fs-2 fw-bold section-title m-0">Picollinos<span class="mais">+</span>Carnes</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" href="#cortes-carnes">Cortes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" href="#tipos-carnes">Pessas selecionadas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-bold" href="#fale-conosco">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale Conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="acougue-carousel">
+            <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="./img/carousel/carne1.jpg" alt="corte de carne">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="./img/carousel/carne2.jpg" alt="corte de carne">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="./img/carousel/carne3.jpg" alt="corte de carne">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="./img/carousel/carne4.jpg" alt="corte de carne">
+                    </div>
+                </div>
+                <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+            <div id="cortes-carnes">
+                <div class="container-fluid pt-5 cortes-carne pb-5">
+                    <h1 class="pb-4">Cortes de carnes</h1>
+                    <div class="row">
+                        <div class="img-cortes col-md-3">
+                            <img class="img-thumbnail" src="./img/mapa de carnes/cortes-boi-infografico.jpg" alt="cortes de boi">
+                        </div>
+                        <div class="img-cortes col-md-3">
+                            <img class="img-thumbnail" src="./img/mapa de carnes/cortes-carne-suina.jpg" alt="cortes de suínos">
+                        </div>
+                        <div class="img-cortes col-md-3">
+                            <img class="img-thumbnail" src="./img/mapa de carnes/mapa-frango.jpg" alt="cortes de cordeiro">
+                        </div>
+                        <div class="img-cortes col-md-3">
+                            <img class="img-thumbnail" src="./img/mapa de carnes/mapa-cortes-cordeiro.jpg" alt="cortes de frango">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tipos-carnes">
+            <div class="container-fluid pecas-carne pb-5">
+                <div class="row">
+                    <h2 class="pt-5 pb-5">Peças selecionadas</h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-pecas">
+                            <button type="button" class="tipos-carnes-button text-center border-0" data-bs-toggle="tab" data-bs-target="#carnes-bovinas">
+                                <i class="bi bi-arrow-right-square-fill me-1 fs-3"></i>
+                                Carnes Bovinas</button>
+                            <button type="button" class="tipos-carnes-button text-center border-0" data-bs-toggle="tab" data-bs-target="#carnes-suinas">
+                                <i class="bi bi-arrow-right-square-fill me-1 fs-3"></i>
+                                Carnes Suínas</button>
+                            <button type="button" class="tipos-carnes-button text-center border-0" data-bs-toggle="tab" data-bs-target="#carnes-frango">
+                                <i class="bi bi-arrow-right-square-fill me-1 fs-3"></i>
+                                Frango</button>
+                            <button type="button" class="tipos-carnes-button text-center border-0" data-bs-toggle="tab" data-bs-target="#carnes-carneiro">
+                                <i class="bi bi-arrow-right-square-fill me-1 fs-3"></i>
+                                Carne de Cordeiro</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="carnes-bovinas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 img-thumbnail" src="./img/cortes bovinos/bifedealcatra.jpg" alt="bife de alcatra">
+                                        <h5>Bife de alcatra</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 img-thumbnail" src="./img/cortes bovinos/contrafile.png" alt="contra filé">
+                                        <h5>Contra filé</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 img-thumbnail" src="./img/cortes bovinos/picanha.jpg" alt="picanha">
+                                        <h5>Picanha</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 img-thumbnail" src="./img/cortes bovinos/vitela.jpg" alt="vitela">
+                                        <h5>Vitela</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="carnes-suinas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 img-thumbnail" src="./img/cortes suinos/barrigadeporco.jpg" alt="barriga de porco">
+                                        <h5>Barriga de porco</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 img-thumbnail" src="./img/cortes suinos/lombinhodeporco.jpg" alt="lombinho de porco">
+                                        <h5>Lombinho de porco</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 img-thumbnail" src="./img/cortes suinos/viteladeporco.jpg" alt="vitela de porco">
+                                        <h5>Vitela de porco</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="carnes-frango">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 img-thumbnail" src="./img/cortes frango/azinhadefrango.jpg" alt="azinha de frango">
+                                        <h5>Azinha de frango</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 img-thumbnail" src="./img/cortes frango/coxasdefrango.jpg" alt="coxas de frango">
+                                        <h5>Coxas de frango</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 img-thumbnail" src="./img/cortes frango/peitodefrango.jpg" alt="peito de frango">
+                                        <h5>Peito de frango</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="carnes-carneiro">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 img-thumbnail" src="./img/carnes carneiro/bifedecarneiro.jpg" alt="bife de carneiro">
+                                        <h5>Bife de carneiro</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 img-thumbnail" src="./img/carnes carneiro/viteladecarneiro.jpg" alt="vitela de carneiro">
+                                        <h5>Vitela de carneiro</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco">
+            <div class="container-fluid fale-conosco">
+                <div class="row">
+                    <h2 class="section-title pt-4 pb-4 text-center mt-4">Fale Conosco
+                        <i class="bi bi-youtube"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-whatsapp"></i>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold">
+                                    <i class="bi bi-person-fill"></i>
+                                    Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold">
+                                    <i class="bi bi-envelope-fill"></i>
+                                    Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold">
+                                    <i class="bi bi-telephone-fill"></i>
+                                    Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold">
+                                    <i class="bi bi-textarea"></i>
+                                    Sua mensagm</label>
+                                <textarea id="mensagem" class="form-control" required></textarea><!--formar uma caixa de texto-->
+                            </div>
+                            <button type="submit" class="btn fw-bold botao-enviar mb-5">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            &copy; Produsido por Weverson David - Aluno EBAC
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
